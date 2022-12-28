@@ -41,7 +41,7 @@ Order robots from RobotSpareBin Industries Inc
 Ask user for file location
     IF    ${DEBUG} == True    RETURN
     Add heading    Please provide location of 'orders.csv' file
-    Add file input    name=orders_file    file_type=CSV files (*.csv)    source=C:\
+    Add file input    name=orders_file    file_type=CSV files (*.csv)    source=../Robot/Files
     ${result}=    Run dialog
     Log    ${result.orders_file}[0]
     Log    ${ORDERS_FILE}
